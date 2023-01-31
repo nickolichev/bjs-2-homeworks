@@ -136,7 +136,7 @@ describe('Домашнее задание к лекции 5 «Классы»', (
       student.addMark(5, "algebra");
       student.addMark(5, "history");
       student.addMark(5, "history");
-      expect(student.getAverage()).toEqual(4.5);
+      expect(student.getAverageBySubject()).toEqual(4.5);
     });
   });
 });

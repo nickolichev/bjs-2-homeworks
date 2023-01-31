@@ -45,7 +45,7 @@ describe('Домашнее задание к лекции 5 «Классы». Д
     });
 
     it('подсчёт общей средней оценки пустого объекта оценок', () => {
-      expect(student.getAverage()).toEqual(0);
+      expect(student.getAverageBySubject()).toEqual(0);
     });
 
     it('подсчёт общей средней оценки', () => {
@@ -53,7 +53,7 @@ describe('Домашнее задание к лекции 5 «Классы». Д
       student.addMark(5, "математика");
       student.addMark(5, "история");
       student.addMark(5, "история");
-      expect(student.getAverage()).toEqual(4.5);
+      expect(student.getAverageBySubject()).toEqual(4.5);
     });
   });
 });
